@@ -73,12 +73,19 @@ function updateScore() {
 }
 
 function showMoves() {
+  const imageUrls = {
+    rock: 'https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f44a.png',
+    paper: 'https://static-00.iconduck.com/assets.00/raised-hand-emoji-444x512-djrkw8mo.png',
+    scissor: 'https://icons.iconarchive.com/icons/google/noto-emoji-people-bodyparts/512/11959-victory-hand-icon.png'
+  };
+
   document.querySelector('.show-result-img').innerHTML =
     `
-  You : <img class="player-move-img" src="/${move}-emoji.png">
-  Machine : <img class="machine-move-img" src="/${machineMove}-emoji.png">
+  You : <img class="player-move-img" src="${imageUrls[move.toLowerCase()]}">
+  Machine : <img class="machine-move-img" src="${imageUrls[machineMove.toLowerCase()]}">
   `;
 }
+
 
 function showScore() {
   document.querySelector('.show-score').innerHTML =
