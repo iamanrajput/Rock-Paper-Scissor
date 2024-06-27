@@ -75,8 +75,8 @@ function updateScore() {
 function showMoves() {
   document.querySelector('.show-result-img').innerHTML =
     `
-  You : <img class="player-move-img" src="/img/${move}-emoji.png">
-  Machine : <img class="machine-move-img" src="/img/${machineMove}-emoji.png">
+  You : <img class="player-move-img" src="/${move}-emoji.png">
+  Machine : <img class="machine-move-img" src="/${machineMove}-emoji.png">
   `;
 }
 
