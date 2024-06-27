@@ -1,0 +1,118 @@
+body {
+  background-color: #1d1c1c;
+  font-family: 'Roboto', sans-serif;
+}
+
+.game-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.intro-msg,
+.show-result-text {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.rock-button,
+.paper-button,
+.scissor-button {
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 20px;
+  border: 3px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: border 0.2s, background-color 0.2s, transform 0.2s;
+}
+
+.rock-img,
+.paper-img,
+.scissor-img {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.2s;
+}
+
+.rock-button:hover,
+.paper-button:hover,
+.scissor-button:hover {
+  border-color: #4869bc;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+.rock-button:active,
+.paper-button:active,
+.scissor-button:active {
+  border-color: #025902;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.rock-img:hover,
+.paper-img:hover,
+.scissor-img:hover {
+  transform: scale(1.2);
+}
+
+.show-result-img {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.player-move-img,
+.machine-move-img {
+  margin: 0 15px;
+  width: 80px;
+}
+
+.extra-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.reset-button,
+.auto-play-button {
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #afc322;
+  width: 100px;
+  height: 40px;
+  margin: 0 10px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  font-size: 16px;
+  transition: background-color 0.2s, border 0.2s, transform 0.2s;
+}
+
+.reset-button:hover,
+.auto-play-button:hover {
+  background-color: #edda07;
+  border-color: #4869bc;
+  transform: scale(1.05);
+}
+
+.reset-button:active,
+.auto-play-button:active {
+  background-color: #09c775;
+  border-color: #4869bc;
+}
+
+.show-score {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  margin-top: 20px;
+}
